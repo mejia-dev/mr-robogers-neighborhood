@@ -25,7 +25,7 @@ function countToTarget() {
         stepsToTarget.push(" " + i);
       }
     }
-  }
+  };
   displayOutput(stepsToTarget);
 };
 
@@ -36,7 +36,7 @@ function runRoboRules(number) {
     return "Boop!"
   } else if (number.toString().includes("1")) {
     return "Beep!"
-  }
+  };
 };
 
 
@@ -52,5 +52,5 @@ function displayOutput(array) {
 };
 
 window.addEventListener("load", function () {
-  this.document.getElementById("inputForm").addEventListener("submit", countToTarget)
+  this.document.getElementById("inputForm").addEventListener("submit", countToTarget);
 });
