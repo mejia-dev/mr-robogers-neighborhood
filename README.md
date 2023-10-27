@@ -7,6 +7,7 @@
 ## Technologies Used
 
 * HTML
+* CSS
 * JavaScript
 
 ## Description
@@ -33,7 +34,7 @@ Option B:
 
 ## Known Bugs
 
-* None
+* Sound may not autoplay due to policy restrictions unless the user initiates interaction on the page: https://goo.gl/xX8pDD
 
 ## License
 
