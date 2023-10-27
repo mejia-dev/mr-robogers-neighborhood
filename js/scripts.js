@@ -2,9 +2,9 @@
 
 function countToTarget() {
   event.preventDefault();
-  const inputString = parseInt(document.getElementById("numInput").value);
+  const inputNumber = parseInt(document.getElementById("numInput").value);
   let stepsToTarget = [];
-  if (inputString === 0) {
+  if (inputNumber === 0) {
     stepsToTarget.push(0);
     displayOutput(stepsToTarget);
     return;  
