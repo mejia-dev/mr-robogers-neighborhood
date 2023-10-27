@@ -6,10 +6,10 @@ function countToTarget() {
   let stepsToTarget = [];
   if (inputString === 0) {
     stepsToTarget.push(0);
-    return stepsToTarget;
-
+    displayOutput(stepsToTarget);
+    return;  
   };
-  return stepsToTarget;
+  displayOutput(stepsToTarget);
 };
 
 function runRoboRules() {
@@ -19,8 +19,13 @@ function runRoboRules() {
 
 // UI Logic
 
-function displayOutput() {
-
+function displayOutput(array) {
+  const outputString = array.toString();
+  let resultsDiv = document.getElementById("resultsDiv");
+  resultsDiv.innerHTML="";
+  let outputParagraph = document.createElement("p");
+  outputParagraph.append(outputString);
+  resultsDiv.append(outputParagraph);
 };
 
 window.addEventListener("load", function () {
