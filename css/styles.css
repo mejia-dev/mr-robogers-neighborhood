@@ -1,0 +1,12 @@
+#introLogo {
+  width: 80%;
+  height: auto;
+  display:block;
+  position: fixed;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.hidden {
+  display: none;
+}
