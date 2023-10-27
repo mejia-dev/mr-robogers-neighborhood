@@ -12,8 +12,10 @@ function countToTarget() {
   displayOutput(stepsToTarget);
 };
 
-function runRoboRules() {
-
+function runRoboRules(number) {
+  if (number.toString().includes("3")) {
+    return "Won't you be my neighbor?"
+  }
 };
 
 
