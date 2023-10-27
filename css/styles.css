@@ -53,15 +53,21 @@ body {
   animation-fill-mode: forwards;
   display: flex;
   background-color: whitesmoke;
-  /* padding: 10px; */
   border: thick;
   border-radius: 10px;
+  font-family: 'KIDS Display', sans-serif;
+  font-family: 'KIDS Text', sans-serif;
 
+}
+
+.robotFont {
+  font-family: 'Akron Sans NBP', sans-serif;
+  font-size: 120%;
 }
 
 .contentColumn {
   width: 50%;
-  padding: 10px;
+  padding: 20px;
 }
 
 h2 {
