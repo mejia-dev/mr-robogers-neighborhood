@@ -57,5 +57,7 @@ function displayOutput(array) {
 };
 
 window.addEventListener("load", function () {
+  const introSong = document.getElementById("robogersIntroSong");
+  introSong.volume = 0.5;
   this.document.getElementById("inputForm").addEventListener("submit", countToTarget);
 });
