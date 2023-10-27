@@ -7,8 +7,11 @@ body {
   width: 80%;
   height: auto;
   position: absolute;
-  top:0; left:0; right:0; bottom:0;
-  margin:auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   animation: fadeOut 4s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
@@ -39,7 +42,6 @@ body {
   to {
     opacity: 1;
   }
-
 }
 
 #contentContainer {
@@ -66,12 +68,20 @@ body {
 }
 
 .contentColumn {
-  width: 50%;
+  width: 48%;
   padding: 20px;
+  text-align: center;
 }
 
 h2 {
   text-align: center;
+}
+
+button {
+  background-color: unset;
+  color: unset;
+  border-color: unset;
+  border-width: unset;
 }
 
 @media screen and (max-width: 600px) {
@@ -83,4 +93,5 @@ h2 {
   .contentColumn {
     width: 90%;
   }
+
 }
