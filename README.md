@@ -15,27 +15,29 @@ Code: runRoboRules(1)
 Expected Output: "Beep!"
 
 
-
 Describe countToTarget():
 
-Test:
-Code:
-Expected Output:
+Test: "It will return 0 if the inputted number is 0"
+Code: countToTarget(0)
+//function does not technically accept input, but input parameter/argument is added for demonstration purposes
+Expected Output: ["0"]
 
-Test:
-Code:
-Expected Output:
+Test: "It will return the steps to get to a number if the inputted number is greater than 0"
+Code: countToTarget(4)
+//function does not technically accept input, but input parameter/argument is added for demonstration purposes
+Expected Output: ["0", "Beep!", "Boop!", "Won't you be my neighbor?", "4"]
 
-Test:
-Code:
-Expected Output:
+Test: "It will return the steps to get to a number if the inputted number is less than 0"
+Code: countToTarget(-4)
+//function does not technically accept input, but input parameter/argument is added for demonstration purposes
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", "-4"]
 
 
 Describe displayOutput():
 
-Test:
-Code:
-Expected Output:
+Test: "It will take an array and return a string"
+Code: displayOutput(["0", "Beep!", "Boop!", "Won't you be my neighbor?", "4"])
+Expected Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4"
 
 
 
@@ -58,7 +60,7 @@ countToTarget():
   let stepsToTarget = 0
 
   if num = 0
-    display 0, end
+    append 0 to stepsToTarget
 
   if num > 0 count up by one until you reach the number
   display 0
@@ -73,4 +75,4 @@ countToTarget():
 
   return stepsToTarget
 
-Send stepsToTarget to new function displayOutput(param). This will write it to the screen
+Send stepsToTarget to new function displayOutput(param). This will clear the screen, then write it to the screen
