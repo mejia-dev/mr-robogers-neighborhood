@@ -58,10 +58,10 @@ function displayOutput(array) {
 
 function runIntro() {
   const introSong = document.getElementById("robogersIntroSong");
+  introSong.pause();
+  introSong.currentTime = 0;
+  introSong.play();
   introSong.volume = 0.5;
-  setTimeout(function() {
-    window.alert("done")
-  }, 600);
 }
 
 window.addEventListener("load", function () {
