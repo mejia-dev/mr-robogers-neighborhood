@@ -10,7 +10,6 @@ function countToTarget() {
     return;
   };
   if (inputNumber > 0) {
-    //stepsToTarget.push(0);
     for (i = 0; i <= inputNumber; i++) {
       if (i.toString().match(/[123]/g)) {
         stepsToTarget.push(" " + runRoboRules(i));
@@ -19,7 +18,13 @@ function countToTarget() {
       }
     }
   } else if (inputNumber < 0) {
-    window.alert("Negative number display message")
+    for (i = 0; i >= inputNumber; i--) {
+      if (i.toString().match(/[123]/g)) {
+        stepsToTarget.push(" " + runRoboRules(i));
+      } else {
+        stepsToTarget.push(" " + i);
+      }
+    }
   }
   displayOutput(stepsToTarget);
 };
