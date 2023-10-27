@@ -36,8 +36,8 @@ Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", "-4"]
 Describe displayOutput():
 
 Test: "It will take an array and return a string"
-Code: displayOutput(["0", "Beep!", "Boop!", "Won't you be my neighbor?", "4"])
-Expected Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4"
+Code: displayOutput(["0"])
+Expected Output: "0"
 
 
 
