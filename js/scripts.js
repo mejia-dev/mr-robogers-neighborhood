@@ -7,8 +7,20 @@ function countToTarget() {
   if (inputNumber === 0) {
     stepsToTarget.push(0);
     displayOutput(stepsToTarget);
-    return;  
+    return;
   };
+  if (inputNumber > 0) {
+    //stepsToTarget.push(0);
+    for (i = 0; i <= inputNumber; i++) {
+      if (i.toString().match(/[123]/g)) {
+        stepsToTarget.push(" " + runRoboRules(i));
+      } else {
+        stepsToTarget.push(" " + i);
+      }
+    }
+  } else if (inputNumber < 0) {
+    window.alert("Negative number display message")
+  }
   displayOutput(stepsToTarget);
 };
 
@@ -28,7 +40,7 @@ function runRoboRules(number) {
 function displayOutput(array) {
   const outputString = array.toString();
   let resultsDiv = document.getElementById("resultsDiv");
-  resultsDiv.innerHTML="";
+  resultsDiv.innerHTML = "";
   let outputParagraph = document.createElement("p");
   outputParagraph.append(outputString);
   resultsDiv.append(outputParagraph);
