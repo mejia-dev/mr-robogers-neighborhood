@@ -9,24 +9,28 @@
 </head>
 
 <body>
-  <h1>Welcome!</h1>
-  <h2>I am Mr. Roboger. Won't you be my neighbor?</h2>
+  <audio autoplay id="robogersIntroSong">
+    <source src="snd/mister-robogers-intro.mp3" loop="false">
+  </audio>
+  <div id="contentContainer">
+    <img src="img/mr-robogers-logo.png">
+    <h2>I am Mr. Roboger. Won't you be my neighbor?</h2>
 
-  <p>Input a number, then I will count to that number starting from 0 while replacing certain numbers with other words.</p>
+    <p>Input a number, then I will count to that number starting from 0 while replacing certain numbers with other words.</p>
 
-  <form id="inputForm">
-    <label for="numInput">Input a number here that you would like me to count to!</label>
-    <br>
-    <input type="number" id="numInput" name="numInput">
-    <br>
-    <label for="reverseCount">Reverse (count from the specified number to 0)</label>
-    <input type="checkbox" id="reverseCount" name="reverseCount" value="reversed">
-    <br><br>
-    <button type="submit">Start Counting</button>
-  </form>
+    <form id="inputForm">
+      <label for="numInput">Input a number here that you would like me to count to!</label>
+      <br>
+      <input type="number" id="numInput" name="numInput">
+      <br>
+      <label for="reverseCount">Reverse (count from the specified number to 0)</label>
+      <input type="checkbox" id="reverseCount" name="reverseCount" value="reversed">
+      <br><br>
+      <button type="submit">Start Counting</button>
+    </form>
 
-  <div id="resultsDiv"></div>
-
+    <div id="resultsDiv"></div>
+  </div>
 </body>
 
 </html>
