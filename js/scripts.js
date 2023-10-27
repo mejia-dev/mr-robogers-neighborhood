@@ -56,8 +56,15 @@ function displayOutput(array) {
   resultsDiv.append(outputParagraph);
 };
 
-window.addEventListener("load", function () {
+function runIntro() {
   const introSong = document.getElementById("robogersIntroSong");
   introSong.volume = 0.5;
+  setTimeout(function() {
+    window.alert("done")
+  }, 600);
+}
+
+window.addEventListener("load", function () {
+  runIntro();
   this.document.getElementById("inputForm").addEventListener("submit", countToTarget);
 });
