@@ -43,7 +43,12 @@ function runRoboRules(number) {
 // UI Logic
 
 function displayOutput(array) {
-  const outputString = array.toString();
+  let outputString = "";
+  if (document.getElementById("reverseCount").checked) {
+    outputString = array.reverse().toString();
+  } else {
+    outputString = array.toString();
+  }
   let resultsDiv = document.getElementById("resultsDiv");
   resultsDiv.innerHTML = "";
   let outputParagraph = document.createElement("p");
