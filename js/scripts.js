@@ -10,7 +10,7 @@ function countToTarget() {
     return;
   };
   if (inputNumber > 0) {
-    for (i = 0; i <= inputNumber; i++) {
+    for (let i = 0; i <= inputNumber; i++) {
       if (i.toString().match(/[123]/g)) {
         stepsToTarget.push(" " + runRoboRules(i));
       } else {
@@ -18,7 +18,7 @@ function countToTarget() {
       }
     }
   } else if (inputNumber < 0) {
-    for (i = 0; i >= inputNumber; i--) {
+    for (let i = 0; i >= inputNumber; i--) {
       if (i.toString().match(/[123]/g)) {
         stepsToTarget.push(" " + runRoboRules(i));
       } else {
