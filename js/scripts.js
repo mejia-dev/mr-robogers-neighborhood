@@ -31,11 +31,11 @@ function countToTarget() {
 
 function runRoboRules(number) {
   if (number.toString().includes("3")) {
-    return "Won't you be my neighbor?"
+    return "Won't you be my neighbor?";
   } else if (number.toString().includes("2")) {
-    return "Boop!"
+    return "Boop!";
   } else if (number.toString().includes("1")) {
-    return "Beep!"
+    return "Beep!";
   };
 };
 
