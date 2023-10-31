@@ -1,8 +1,6 @@
 // Business Logic
 
-function countToTarget() {
-  event.preventDefault();
-  const inputNumber = parseInt(document.getElementById("numInput").value);
+function countToTarget(inputNumber) {
   let stepsToTarget = [];
   if (inputNumber === 0) {
     stepsToTarget.push(0);
@@ -42,6 +40,12 @@ function runRoboRules(number) {
 
 // UI Logic
 
+function gatherInput() {
+  event.preventDefault();
+  const numInput = parseInt(document.getElementById("numInput").value);
+  countToTarget(numInput)
+}
+
 function displayOutput(array) {
   let outputString = "";
   if (document.getElementById("reverseCount").checked) {
@@ -66,5 +70,5 @@ function runIntro() {
 
 window.addEventListener("load", function () {
   runIntro();
-  this.document.getElementById("inputForm").addEventListener("submit", countToTarget);
+  this.document.getElementById("inputForm").addEventListener("submit", gatherInput);
 });
